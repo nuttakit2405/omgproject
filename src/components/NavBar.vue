@@ -6,9 +6,14 @@
                 <li v-show="!user">
                     <router-link to="/login">Login</router-link>
                 </li>
-                <!-- <li v-show="user">
-                    <router-link to="/profile">Profile</router-link>
-                </li> -->
+                <li v-show="user" >
+                    <router-link to="/profile">
+                      <div style="display:flex;align-items: center;">
+                        <img :src="user.photoURL" style="width:45px;height:45px;border-radius:50%;border:1px solid #333;margin-right:5px;"/>
+                        <p>{{user.displayName}}</p>
+                      </div>
+                    </router-link>
+                </li>
                 <li v-show="user">
                     <a @click="signoutButtonPressed">Logout</a>
                 </li>

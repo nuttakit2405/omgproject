@@ -8,7 +8,7 @@
                 <router-link to="/">
                 <img
                     :src="user.photoURL"
-                    style="width:75px;height:75px;border-radius:50%;border:4px solid #333"
+                    style="width:75px;height:75px;border-radius:10%;border:1px solid #333"
                 />
                 </router-link>
             </div>
